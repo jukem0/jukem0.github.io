@@ -1,0 +1,62 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, 
+    rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+topnav , div.headers , div.header {
+  background-color: rgb(43, 43, 43, 0.5);
+}
+
+div.header {
+  margin: -8px;
+}
+
+/* Header */
+.headers {
+    color: white;
+    margin: 0px;
+}
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    margin: 0spx;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: rgb(43, 43, 43, 0.8);
+    color: white;
+  }
+
+/* Create three equal columns that float next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+/* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+

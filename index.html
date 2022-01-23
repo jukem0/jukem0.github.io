@@ -1,18 +1,210 @@
-<html>
-    <head>
-        <title>Startside - logbog</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="header">
-                <h1 class="headers">Startside</h1>
-        </div>
-        <div class="topnav">
-            <a href="index.html" title="Startside">Start</a>
-            <a href="mig.html" title="Om mig">Mig</a>
-            <a href="inf.html" title="Informatik">Inf</a>
-        </div>
-    </body>
+<head>
+    <title>Alex's Logbog 😘</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="hLim">
+        <header>
+            <h2>Informatik Logbog</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul class="navLink">
+                    <li><button onclick="closeInf()">Informatisk Grundforløb</button></li>
+                    <li><button onclick="closeCodeHTML()">Design af IT-systemer</button></li>
+                    <li><button onclick="closeProg()">Programmering</button></li>
+                </ul>
+            </nav>
+
+            <article>
+                <div class="cnt" id="infGf">
+                    <button class="accordion">Mass Surveillance</button>
+                    <div class="panel">
+                        <p>Mass Surveillance er når fx samfundet ledere holder øje
+                            med folket, fx gennem deres telefoner eller ved brug
+                            af satelit overvågning.</p>
+                        <p>Vi så også en <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo">video</a> som snakker om
+                            problemerne som kan stamme
+                            fra Mass Surveillance.</p>
+                    </div>
+
+                    <button class="accordion">Surveillance Capitalism</button>
+                    <div class="panel">
+                        <p>Surveillance Capitalism er når mange tjener penge
+                            på andres data, ved at sælge det til andre, fx til
+                            reklamebureauer, så de kan give dig reklamer som har
+                            større sandsynlighed for at fange din opmærksomhed.
+                        </p>
+                        <p>Vi fik også udleveret en <a
+                                href="https://medium.com/swlh/what-is-surveillance-capitalism-bd7c24d8ddba">artikle</a>
+                            som taler om Surveillance Capitalism og vi fik også set en <a
+                                href="https://www.youtube.com/watch?v=kLFFnAONHvU">video</a>
+                            som forklarer hvad GDPR er.</p>
+                    </div>
+
+                    <button class="accordion">Internet Addiction</button>
+                    <div class="panel">
+                        <p>Vi lærte om hvordan informationsteknologi kan skabe afhængighed og hvor overforbrug kan have
+                            negative effekter. Desuden lærte vi hvordan man kan skelne mellem sundt og usundt internet
+                            brug.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Internet_addiction_disorder">Internet Addiction
+                                    Disorder</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=8UsI9CXHm6o">The Science of Internet Addiction
+                                    & Willpower</a></li>
+                            <li><a href="https://www.mind-diagnostics.org/internet_addiction-test">Internet Addiction
+                                    Test</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Automation</button>
+                    <div class="panel">
+                        <p>Informationsteknologi handler om at tilintetgøre en masse opgaver, ved at gøre dem
+                            automatiske, fx ved brug af robotter. Alt dette kan ændre efterspørgsel på arbejdsmarkedet.
+                        </p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=5TNAz1HYg18&t=329s">The Singularity, Skynet,
+                                    and the Future of Computing: Crash Course Computer Science #40</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=P2mxdrTP-os">Jordan Peterson - What Kind Of Job
+                                    Fits Your IQ</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=S_D1Q8CJSkM">Jordan Peterson - You need this to
+                                    achieve success</a></li>
+                            <li><a href="https://mensa.dk/iqtest/">Mensa IQ Test</a></li>
+                            <li><a href="https://bigfive-test.com">Big Five Personality Test</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Cybersikkerhed</button>
+                    <div class="panel">
+                        <p>Vi fik stiftet bekendsskab med basal termonology indenfor cybersikkerhed og hvordan man bedst
+                            kunne beskytte sig selv.</p>
+                        <p>Nogle af de termer som vi lærte var:</p>
+                        <ul>
+                            <li>
+                                Confidentiality, Integrity, og Availability (CIA):
+                                <ul>
+                                    <li>
+                                        Confidentiality: Kun dem som skal have adgang har adgang.
+                                    </li>
+                                    <li>
+                                        Integrity: Al information er korrekt samt afsender.
+                                    </li>
+                                    <li>
+                                        Availability: Hvornår er IT-systemet tilgængeligt?
+                                        Hvordan beskytter man mod angreb? Kan det være slukket om natten?,
+                                        Hvornår kan man opdatere det?
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Passwords: De(t) kodeord man bruger til sine forskellige accounts,
+                                skal helst være unikt og noget som andre ikke kan gætte.
+                            </li>
+                            <li>
+                                2-factor-verification: En unik måde at identificerer sig selv når man
+                                skal ind på sin konto.
+                                <ul>
+                                    <li>
+                                        Noget man ved: Ens password
+                                    </li>
+                                    <li>
+                                        Noget man har: 2FA app, fx NemID-nøglekort
+                                    </li>
+                                    <li>
+                                        Noget man er: Ens øjne, fingeraftryk, ansigtsgenkendelse
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=bPVaOlJ6ln0">Cybersecurity: Crash Course
+                                    Computer Science #31</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Hackers og Cyberattacks</button>
+                    <div class="panel">
+                        <p>Vi lærte om forskellige angrebsmetoder som phishing, bruteforce, trojan, ransomware, sql
+                            injection...</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a
+                                    href="https://www.youtube.com/watch?v=_GzE99AmAQU&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=33">Hackers
+                                    & Cyber Attacks: Crash Course Computer Science #32</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Kryptografi</button>
+                    <div class="panel">
+                        <p>Vi lærte om forskellige måder at kryptere på, såsom symmetrisk kryptering som er hurtig og
+                            sikker, men svær at dele med andre, asymmetrisk kryptering som er langsommere og mindre
+                            sikker, men nemmere at dele, og hashes som bruger en hash algoritme til at af- og kryptere
+                            din plaintext.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=vk3py9M2IfE">Private Key Encryption (Symmetric
+                                    Key Encryption)</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=8I7BNgD2Yag">Public Key Encryption (Asymmetric
+                                    Key Encryption)</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=xsp--srKWKw">How hash function work?</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Public key infrastructure</button>
+                    <div class="panel">
+                        <p>Vi lærte hvodan krypteringsnøgler bliver udvekslet på internettet og hvordan vi kan stole på
+                            at folk ikke udgiver sig for at være andre end de er.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=TmA2QWSLSPg">What is digital signature?</a>
+                            </li>
+                            <li><a href="https://www.youtube.com/watch?v=UbMlPIgzTxc">Why digital certificate?</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=5rT6fZUwhG8">Digital Certificates Explained -
+                                    How digital certificates bind owners to their public key</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Netværk</button>
+                    <div class="panel">
+                        <p>Vi lærte hvordan computere finder hinanden på internettet og kommunikerer via forskellige
+                            protocoler, som IP, PORT, UDP, TCP, LAN, WAN, MAC, og DNS.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=3QhU9jd03a0">Computer Networks: Crash Course
+                                    Computer Science #28</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=AEaKrq3SpW8">The Internet: Crash Course
+                                    Computer Science #29</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=guvsH5OFizE">The World Wide Web: Crash Course
+                                    Computer Science #30</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="cnt" id="codeHTML">
+                    <button class="accordion">Mass Surveillance</button>
+                    <div class="panel">
+                        <p>Mass Surveillance er når fx samfundet ledere holder øje
+                            med folket, fx gennem deres telefoner eller ved brug
+                            af satelit overvågning.</p>
+                        <p>Vi så også en <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo">video</a> som snakker om
+                            problemerne som kan stamme
+                            fra Mass Surveillance.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="myScript.js"></script>
+    <script src="close.js"></script>
+</body>
+
 </html>

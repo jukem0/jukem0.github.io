@@ -1,62 +1,125 @@
+/* color palette  
+https://coolors.co/27187e-758bfd-aeb8fe-f1f2f6-ff8600 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, 
-    rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100%;
+    max-height: fit-content;
+    background: linear-gradient(90deg, #AEB8FE 30%, #758BFD 0% ) ;
 }
 
-topnav , div.headers , div.header {
-  background-color: rgb(43, 43, 43, 0.5);
-}
-
-div.header {
-  margin: -8px;
-}
-
-/* Header */
-.headers {
+/* Style the header */
+header {
+    background-color: #27187E;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
     color: white;
-    margin: 0px;
 }
 
-/* The navbar container */
-.topnav {
-    overflow: hidden;
-    margin: 0spx;
-  }
-  
-  /* Navbar links */
-  .topnav a {
+/* Create two columns/boxes that floats next to each other */
+nav {
     float: left;
+    width: 30%;
+    padding: 0px;
+    justify-content: center;
+    overflow: auto;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navLink a {
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Links - change color on hover */
-  .topnav a:hover {
-    background-color: rgb(43, 43, 43, 0.8);
-    color: white;
-  }
-
-/* Create three equal columns that float next to each other */
-.column {
-    float: left;
-    width: 33.33%;
 }
-  
+
+.navLink a:hover {
+    background-color: #FF8600;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
 /* Clear floats after the columns */
-  .row:after {
+section::after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+h2, p, li {
+    color: #F1F2F6;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.accordion {
+    background-color: transparent;
+    color: rgb(253, 253, 253);
+    text-shadow:
+    -1px -1px 1px #000,
+    1px -1px 1px #000,
+    -1px 1px 1px #000,
+    1px 1px 1px #000; 
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
   }
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+  .accordion:hover {
+  border: solid 1px rgb(119, 119, 119);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
+#infGf {
+    display: block;
+}
+
+#codeHTML {
+    display: none;
+}
+
+#prog {
+    display: none;
+}

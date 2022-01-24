@@ -15,14 +15,15 @@
         <section>
             <nav>
                 <ul class="navLink">
-                    <li><button onclick="closeInf()">Informatisk Grundforløb</button></li>
-                    <li><button onclick="closeCodeHTML()">Design af IT-systemer</button></li>
-                    <li><button onclick="closeProg()">Programmering</button></li>
+                    <li><a onclick="closeInf()">Informatisk Grundforløb</a></li>
+                    <li><a onclick="closeCodeHTML()">Design af IT-systemer</a></li>
+                    <li><a onclick="closeProg()">Programmering</a></li>
                 </ul>
             </nav>
 
             <article>
                 <div class="cnt" id="infGf">
+                    <h1>Informatisk Grundforløb</h1>
                     <button class="accordion">Mass Surveillance</button>
                     <div class="panel">
                         <p>Mass Surveillance er når fx samfundet ledere holder øje
@@ -190,15 +191,167 @@
 
 
                 <div class="cnt" id="codeHTML">
-                    <button class="accordion">Mass Surveillance</button>
+                    <h1>Design af IT-Systemer</h1>
+                    <button class="accordion">HTML</button>
                     <div class="panel">
-                        <p>Mass Surveillance er når fx samfundet ledere holder øje
-                            med folket, fx gennem deres telefoner eller ved brug
-                            af satelit overvågning.</p>
-                        <p>Vi så også en <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo">video</a> som snakker om
-                            problemerne som kan stamme
-                            fra Mass Surveillance.</p>
+                        <p>HTML står for <bold>H</bold>yper<bold>T</bold>ext <bold>M</bold>arkup <bold>L</bold>anguage.</p>
+                        <p>Man bruger HTML til at lave hjemmesider. HTML er det sprog computeren læser for at vise en hjemmeside, og det er i HTML filer at man definerer hvad der skal være på hjemmesiden.</p>
+                        <p>HTML arbejder sammen med CSS og JavaScript til at vise hjemmesider, så de ser ordenligt ud.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/html/html_intro.asp">HTML w3schools</a></li>
+                            <li><a href="https://github.com/siinch/logbog-skabelon">Logbog skabelon</a></li>
+                        </ul>
                     </div>
+
+                    <button class="accordion">CSS</button>
+                    <div class="panel">
+                        <p>CSS står for <bold>C</bold>ascadin <bold>S</bold>tyle <bold>S</bold>heet.</p>
+                        <p>Man bruger CSS til at definere stilen på hjemmesiden, ved at enten vælge et helt element, en class, eller et id, og derefter definere hvad der skal ske med det.</p>
+                        <p>CSS arbejder sammen med HTML hvis man linker dem sammen.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/Css/css_intro.asp">CSS w3schools</a></li>
+                            <li><a href="https://www.w3schools.com/colors/colors_rgb.asp">rgbA w3schools</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Graphic Design Principles</button>
+                    <div class="panel">
+                        <p>De 5 principper er:</p>
+                        <ul>
+                            <li>Contrast: Kontrasten imellem farverne</li>
+                            <li>Alignment: Hvordan de forskellige elementer står i forhold til hinanden</li>
+                            <li>Proximity: Hvor tæt de forskellige elementer er fra hinanden</li>
+                            <li>Repetition: Dette princip går ud på at man skal bare være konsekvent med sine styles og bredder</li>
+                            <li>White space: Hvor meget af siden der er tom, så hjemmesiden ikke ser rodet ud</li>
+                        </ul>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://w3-lab.com/5-core-principles-graphic-design-rules/">5 CORE PRINCIPLES IN GRAPHIC DESIGN - RULES YOU MUST OBEY</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">JavaScript og DOM</button>
+                    <div class="panel">
+                        <p>JavaScript er et sprog som bruges til at laves hjemmesider dynamiske.</p>
+                        <p>Man kan fx bruge JavaScript (js) til at ændre indholdet på en hjemmeside ved at klikke på noget.</p>
+                        <p>DOM står for <bold>D</bold>ocument <bold>O</bold>bject <bold>M</bold>odel, og det underbygger JavaScript.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_htmldom.asp">DOM w3schools</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Spiral Modellen</button>
+                    <div class="panel">
+                        <p>Spiral modellen er en model som er inddelt i 3 forskellige faser hvorefter den gentager sigselv indtil man er tilfreds med sit produkt, Assess, Design, Build, repeat</p>
+                        <ul>
+                            <li>Assess: Her finder du ud af hvad dine brugere har behov for, fx ved brug af spørgeskemaer, interviews, eller hjemmeside data</li>
+                            <li>Design: Her designer du hvordan du vil have hjemmesiden til at se ud</li>
+                            <li>Build: Her bygger du det som du har designet</li>
+                            <li>(repeat): her gentager du fra assess fasen igen</li>
+                        </ul>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://nicocasel.net/blog/what-is-ux-what-are-ux-research-and-design/">Spiral model</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cnt" id="prog">
+                    <h1>Programmering</h1>
+                    <button class="accordion">Programmering 1 (Hello world!)</button>
+                    <div class="panel">
+                        <p>Vi fik en introduktion til hvordan man kan udskrive noget teskt ved brug af "console.log()".</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/jsref/met_console_log.asp">JavaScript Console log()</a></li>
+                            <li><a href="https://youtu.be/PlbupGCBV6w">#0 JavaScript Tutorial for Beginners | Introduction</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 2 (Variable & Datatyper)</button>
+                    <div class="panel">
+                        <p>Vi lærte om hvad en variable er og hvordan man bruger dem, samt hvilke datatyper man kan bruge, og hvordan.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_variables.asp">JavaScript Variables</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_datatypes.asp">JavaScript Data Types</a></li>
+                            <li><a href="https://youtu.be/TOkU5HxES1o">#3 Variables in JavaScript</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 3 (Operatorer)</button>
+                    <div class="panel">
+                        <p>Vi lærte om forskellige operators, såsom assignment operators, arithmatic operators, og comparisons operators.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_assignment.asp">JavaScript Assignment</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_arithmetic.asp">JavaScript Arithmetic</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_comparisons.asp">JavaScript Comparison and Logical Operators</a></li>
+                            <li><a href="https://youtu.be/otYwi_wW9Hk">#9 Arithmetic Operators in JavaScript</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 4 (If-Statements)</button>
+                    <div class="panel">
+                        <p>Vi lærte om hvad if-statements er og hvordan vi kan bruge dem til fx spil.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_if_else.asp">JavaScript if else and else if</a></li>
+                            <li><a href="https://youtu.be/o_iO9WuoWaM">#12 Conditional Statements If Else in JavaScript</a></li>
+                            <li><a href="https://youtu.be/SJPsOFfvEQA">#14 Switch Statement in JavaScript</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 5 (Funktioner)</button>
+                    <div class="panel">
+                        <p>Vi lærte om hvad en function er og hvordan vi kan bruge dem.</p>
+                        <p>En function er et stykke kode man kan køre om, og om igen ved at "kalde" på dem.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_functions.asp">JavaScript Functions</a></li>
+                            <li><a href="https://youtu.be/jwOW-qlJtxg">#22 Functions in JavaScript</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=pCU7vicLCgA">#23 Function return and passing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 6 (Arrays)</button>
+                    <div class="panel">
+                        <p>Vi lærte om arrays og hvordan de bruges og hvad de kan.</p>
+                        <p>En array er en variable eller konstant som kan indeholde flere værdier.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_arrays.asp">JavaScript Arrays</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=TScHu-37Cqw">Creating Array and Fetching Elements in JavaScript</a></li>
+                            <li><a href="https://youtu.be/eADCg1R5_sk">Different types of data in Array</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 7 (Loops)</button>
+                    <div class="panel">
+                        <p>Vi lærte om loops og hvad de kan og hvordan de fungerer.</p>
+                        <p>Et loop et stykke kode som bliver kørt igen og igen sålænge betingelserne er opfyldt.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_loop_for.asp">JavaScript For Loop</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=h84MlHv6g4Q">#16 While loop in JavaScript</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=jcwTB9fBzP0">#17 For Loop in JavaScript</a></li>
+                        </ul>
+                    </div>
+                    
+                    <button class="accordion">Programmering 8 (Prompt/Alert/Confirm)</button>
+                    <div class="panel">
+                        <p>Vi lærte hvad alerts, prompts og confirm er.</p>
+                        <p>En alert er et lille vindue som popper op. En prompt er også et lille vindue som popper op, men den beder om at man skriver noget i den. Confirm er igen et lille vindue som popper op, og du har kun 3 muligheder, at klikke OK, Cancel eller at klikke uden for vinduet.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_popup.asp">JavaScript Popup Boxes</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=ZmRYan3lAIo">Basic JavaScript #13: alert/prompt/confirm</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </article>
         </section>

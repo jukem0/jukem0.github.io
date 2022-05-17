@@ -9,15 +9,16 @@
 <body>
     <div id="hLim">
         <header>
-            <h2>Informatik Logbog</h2>
+            <h2 id="idk">Informatik Logbog</h2>
         </header>
 
         <section>
             <nav>
                 <ul class="navLink">
-                    <li><a onclick="closeInf()">Informatisk Grundforløb</a></li>
-                    <li><a onclick="closeCodeHTML()">Design af IT-systemer</a></li>
-                    <li><a onclick="closeProg()">Programmering</a></li>
+                    <li><a onclick="openInf()">Informatisk Grundforløb</a></li>
+                    <li><a onclick="openCode()">Design af IT-systemer</a></li>
+                    <li><a onclick="openProg()">Programmering</a></li>
+                    <li><a onclick="openServer()">Servere og databaser</a></li>
                 </ul>
             </nav>
 
@@ -161,7 +162,7 @@
 
                     <button class="accordion">Public key infrastructure</button>
                     <div class="panel">
-                        <p>Vi lærte hvodan krypteringsnøgler bliver udvekslet på internettet og hvordan vi kan stole på
+                        <p>Vi lærte hvordan krypteringsnøgler bliver udvekslet på internettet og hvordan vi kan stole på
                             at folk ikke udgiver sig for at være andre end de er.</p>
                         <p>✨Referencer:</p>
                         <ul>
@@ -188,7 +189,6 @@
                         </ul>
                     </div>
                 </div>
-
 
                 <div class="cnt" id="codeHTML">
                     <h1>Design af IT-Systemer</h1>
@@ -382,6 +382,114 @@
                         </ul>
                     </div>
 
+                </div>
+                
+                <div class="cnt" id="server">
+                    <h1>Servere og databaser</h1>
+                    <button class="accordion">Servere og databaser 0 (Client-Server Modellen)</button>
+                    <div class="panel">
+                        <p>Vi blev introduceret til Client-Server Modellen, som er en model der viser hvordan servere, databaser, og clienter reagerer med hinanden.</p>
+                        <img src="images/Client-Server-model.png">
+                        <p>Vi fik også et Fullstack eksemple på hvordan koden til en Client-Server ville se ud, og det arbejdede vi så videre på.</p>
+                        <p>Vi fik også installeret en database lokalt på vores pc'er, som hedder MongoDB, som vi brugte i samarbejde med Fullstack eksemplet.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">Client-Server Model</a></li>
+                            <li><a href="https://github.com/siinch/fullstackdemo/archive/refs/heads/master.zip">Fullstack Client-Server eksemple</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 1 (3-Lags Arkitektur)</button>
+                    <div class="panel">
+                        <p>Vi blev introduceret til 3-Lags arkitektur, er en client-server arkitektur som består af 3 lag: </p>
+                        <ul>
+                            <li>Præsentations laget<ul><li>En front-end hjemmeside</li></ul></li>
+                            <li>Applikations laget<ul><li>Et script som giver mening til databasen og front-end siden</li></ul></li>
+                            <li>Data laget<ul><li>En back-end database</li></ul></li>
+                        </ul>
+                        <img src="images/3-lags-ark.png" style="height: 600; width: 600;">
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Multitier_architecture">Multitier architecture</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=r8JuAz9_V18">System Design: What is 3 tier architecture?</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 2 (Terminalen)</button>
+                    <div class="panel">
+                        <p>Vi lærte at starte vores egen server med MongoDB i VSCode terminalet.</p>
+                        <p>Efter databasen var tændt kunne man kigge på selve serverens indholdt ved brug af MongoDBCompass.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=ONrY_9R4DFE">Videoguide til installation af server / database</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 3 (HTTP)</button>
+                    <div class="panel">
+                        <p>Vi fik en introduction til <bold>H</bold>yper<bold>t</bold>ext <bold>T</bold>ransfer <bold>P</bold>rotocol.</p>
+                        <p>Hvis protokollen er sikker hedder den i stedet for HTTP, HTTPS hvilket står for <bold>H</bold>yper<bold>t</bold>ext <bold>T</bold>ransfer <bold>P</bold>rotocol <bold>S</bold>ecure.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">Developer guide fra Mozilla | HTTP</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=hExRDVZHhig&ab_channel=PowerCertAnimatedVideos">SSL, TLS, HTTP, HTTPS Explained</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 4 (HTTP Metoder)</button>
+                    <div class="panel">
+                        <p>Vi lærte de forskellige metoder til at få, lave, ændre, og slette data.</p>
+                        <p>Disse metoder er som følger: GET, POST, PUT, DELETE.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">Developer guide fra Mozilla | HTTP</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">Developer guide fra Mozilla | HTTP | Metode: GET</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">Developer guide fra Mozilla | HTTP | Metode: POST</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT">Developer guide fra Mozilla | HTTP | Metode: PUT</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE">Developer guide fra Mozilla | HTTP | Metode: DELETE</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=guYMSP7JVTA&ab_channel=Telusko">Http Methods</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 5 (MongoDB: Create, Insert og Drop)</button>
+                    <div class="panel">
+                        <p>Her lærte vi hvad en collection er når man taler om MongoDB, og om hvordan man laver dem og fjerner dem.</p>
+                        <p>Vi lærte kommandoerne: Create, Insert, og Drop.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.mongodb.com/docs/compass/current/collections/">MongoDB | Collections</a></li>
+                            <li><a href="https://www.mongodb.com/docs/manual/core/document/">MongoDB | Documents</a></li>
+                            <li><a href="https://www.mongodb.com/docs/compass/current/documents/insert/">MongoDB | Insert Documents</a></li>
+                            <li><a href="https://www.w3schools.com/nodejs/nodejs_mongodb_drop.asp">w3schools | Node.js MongoDB Drop</a></li>
+                            <li><a href="https://www.w3schools.com/nodejs/nodejs_mongodb_insert.asp">w3schools | Node.js MongoDB Insert</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 6 (MongoDB: Find, Update og Delete)</button>
+                    <div class="panel">
+                        <p>Her lærte vi de sidste kommandoer som: Find, Update, og Delete.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.mongodb.com/docs/compass/current/query/filter/">MongoDB | Query Your Data</a></li>
+                            <li><a href="https://www.mongodb.com/docs/compass/current/documents/modify/">MongoDB | Modify Documents</a></li>
+                            <li><a href="https://www.mongodb.com/docs/compass/current/documents/delete/">MongoDB | Delete Documents</a></li>
+                            <li><a href="https://www.w3schools.com/nodejs/nodejs_mongodb_find.asp">w3schools | Node.js MongoDB Find</a></li>
+                            <li><a href="https://www.w3schools.com/nodejs/nodejs_mongodb_update.asp">w3schools | Node.js MongoDB Update</a></li>
+                            <li><a href="https://www.w3schools.com/nodejs/nodejs_mongodb_delete.asp">w3schools | Node.js MongoDB Delete</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion">Servere og databaser 7 (Entity Relationship Diagram)</button>
+                    <div class="panel">
+                        <p>Vi så hvad et Entity Relationship Diagram var og hvordan man kan lave et selv, og det hjælper en med at forstå hvordan ens database opbygning fungerer.</p>
+                        <p>✨Referencer:</p>
+                        <ul>
+                            <li><a href="https://www.lucidchart.com/pages/er-diagrams">What is an Entity Relationship Diagram (ERD)?</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=QpdhBUYk7Kk&ab_channel=LucidSoftware">Entity Relationship Diagram (ERD) Tutorial - Part 1</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=-CuY5ADwn24&ab_channel=LucidSoftware">Entity Relationship Diagram (ERD) Tutorial - Part 2</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </article>
         </section>

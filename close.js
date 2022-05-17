@@ -1,31 +1,34 @@
+// declares var a - d to each segment 
+var a = document.getElementById("infGf")
+var b = document.getElementById("codeHTML")
+var c = document.getElementById("prog")
+var d = document.getElementById("server")
 
 
-function closeInf() {
-    var x = document.getElementById("infGf");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function openInf() {
+    a.style.display="block"
+    b.style.display="none"
+    c.style.display="none"
+    d.style.display="none"
 }
 
-function closeCodeHTML() {
-    var x = document.getElementById("codeHTML");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+function openCode() {
+    a.style.display="none"
+    b.style.display="block"
+    c.style.display="none"
+    d.style.display="none"
 }
 
-function closeProg() {
-    var x = document.getElementById("prog");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+function openProg() {
+    a.style.display="none"
+    b.style.display="none"
+    c.style.display="block"
+    d.style.display="none"
 }
 
-
-
+function openServer() {
+    a.style.display="none"
+    b.style.display="none"
+    c.style.display="none"
+    d.style.display="block"
+}

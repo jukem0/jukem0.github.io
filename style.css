@@ -13,47 +13,52 @@ body {
     margin: 0;
     min-height: 100%;
     max-height: fit-content;
-    background: linear-gradient(90deg, #AEB8FE 30%, #758BFD 0% ) ;
+    background: linear-gradient(90deg, #dfdfdf 20%, #ffffff 0% ) ;
 }
 
 /* Style the header */
 header {
-    background-color: #27187E;
+    background-color: #696969;
     padding: 10px;
     text-align: center;
     font-size: 35px;
-    color: white;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
     float: left;
-    width: 30%;
+    width: 20%;
     padding: 0px;
     justify-content: center;
     overflow: auto;
+    cursor: pointer;
 }
 
 /* Style the list inside the menu */
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
+}
+
+.navLink {
+    margin: 0px;
 }
 
 .navLink a {
     display: block;
-    text-align: center;
     padding: 14px 16px;
+    padding-left: 100px;
     text-decoration: none;
 }
 
 .navLink a:hover {
-    background-color: #FF8600;
+    background-color: #ffffff;
 }
 
 article {
     float: left;
     padding: 20px;
+    padding-top: 0px;
     width: 70%;
 }
 
@@ -66,7 +71,6 @@ section::after {
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-
     nav,
     article {
         width: 100%;
@@ -75,43 +79,48 @@ section::after {
 }
 
 h2, p, li {
-    color: #F1F2F6;
+    color: #000000;
+}
+
+p, a {
+    font-size: 22px;
+}
+
+#idk {
+    color:#E85F5C;
+    font-size: 56px;
 }
 
 h1, bold {
     font-weight: bold;
-    color: #27187E;
+    color: #000000;
+    font-size: 26px;
 }
 
 .accordion {
-    background-color: transparent;
-    color: rgb(253, 253, 253);
-    text-shadow:
-    -1px -1px 1px #000,
-    1px -1px 1px #000,
-    -1px 1px 1px #000,
-    1px 1px 1px #000; 
+    background-color: #d8d8d8;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.4s;
-  }
-  
-  .accordion:hover {
-  border: solid 1px rgb(119, 119, 119);
-  }
-  
-  .panel {
+}
+
+.accordion:hover {
+    border: solid 1px rgb(119, 119, 119);
+}
+
+.panel {
     padding: 0 18px;
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
 #infGf {
     display: block;
@@ -123,4 +132,19 @@ h1, bold {
 
 #prog {
     display: none;
+}
+
+#server {
+    display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

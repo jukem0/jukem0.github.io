@@ -86,6 +86,10 @@ p, a {
     font-size: 22px;
 }
 
+a {
+    text-decoration-line: none;
+}
+
 #idk {
     color:#E85F5C;
     font-size: 56px;
